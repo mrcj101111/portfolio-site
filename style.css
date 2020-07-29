@@ -46,6 +46,10 @@ body::before {
   background: white !important;
 }
 
+.swiper-pagination-bullet-active {
+  outline: auto;
+}
+
 /* ---- particles.js ---- */
 canvas {
   display: block;
@@ -98,6 +102,41 @@ canvas {
 
 .count-particles {
   border-radius: 0 0 3px 3px;
+}
+
+.rectangles-block {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 237px;
+  height: 168px;
+}
+.rectangles-block h1 {
+  color: white;
+}
+
+.logo-block {
+  position: absolute;
+  width: 200px;
+  height: 200px;
+}
+.logo-block.second {
+  left: 8%;
+  top: -10%;
+}
+.logo-block.third {
+  left: 16%;
+  top: -20%;
+}
+.logo-block rect {
+  position: absolute;
+  left: 50px;
+  width: 100%;
+  height: 100%;
+  fill: #21212800;
+  stroke: white;
+  stroke-width: 5;
 }
 
 /*# sourceMappingURL=style.css.map */
