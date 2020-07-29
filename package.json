@@ -1,0 +1,20 @@
+{
+  "name": "portfolio-site",
+  "version": "1.0.0",
+  "description": "Frontend portfolio website",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mrcj101111/portfolio-site.git"
+  },
+  "author": "CJ Botma",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mrcj101111/portfolio-site/issues"
+  },
+  "homepage": "https://github.com/mrcj101111/portfolio-site#readme",
+  "dependencies": {}
+}
