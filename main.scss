@@ -1,8 +1,19 @@
 //Variables
 $body-border-width: 20px;
 
+@mixin header-line {
+    content: "";
+    display: block;
+    width: 130px;
+    height: 1px;
+    background: white;
+    top: 50%;
+    position: absolute;
+}
+
 html * {
     color: white;
+    font-weight: 200;
 }
 
 body {
@@ -19,6 +30,33 @@ body {
         right: 0px;
         bottom: 0px;
         border: $body-border-width solid white;
+    }
+}
+
+h2 {
+    position: absolute;
+    top: 40px;
+    font-size: 3rem !important;
+    font-weight: 200 !important;
+    &.about-header {
+        &::before {
+            @include header-line;
+            left: -53%;
+        }
+        &::after {
+            @include header-line;
+            right: -53%;
+        }
+    }
+    &.tech-header {
+        &::before {
+            @include header-line;
+            left: -73%;
+        }
+        &::after {
+            @include header-line;
+            right: -73%;
+        }
     }
 }
 
@@ -50,31 +88,13 @@ body {
     -ms-flex-align: center;
     -webkit-align-items: center;
     align-items: center;
-    h2 {
+    p {
         position: absolute;
-        top: 20px;
-        font-size: 3rem;
-        font-weight: 200;
-        &::before {
-            content: "";
-            display: block;
-            width: 130px;
-            height: 1px;
-            background: white;
-            left: -53%;
-            top: 50%;
-            position: absolute;
-        }
-        &::after {
-            content: "";
-            display: block;
-            width: 130px;
-            height: 1px;
-            background: white;
-            right: -53%;
-            top: 50%;
-            position: absolute;
-        }
+        top: 120px;
+        max-width: 800px;
+        width: 100%;
+        margin: auto;
+        padding: 0 40px;
     }
 }
 
@@ -91,6 +111,9 @@ body {
         height: 20px;
         top: -6px;
         left: -6px;
+    }
+    &:focus {
+        outline: none;
     }
 }
 
@@ -183,6 +206,7 @@ body {
 
 .glitch {
     color: rgb(252, 252, 252);
+    font-weight: 400;
     position: relative;
     font-size: 2rem;
     animation: glitch 5s 5s infinite;
@@ -256,7 +280,7 @@ body {
     }
 }
 
-// Scroll arrow
+/* ---- Scroll arrow ---- */
 .arrows {
     width: 60px;
     height: 72px;
@@ -317,4 +341,14 @@ body {
 .arrows path.a3 {
     animation-delay: 0s;
     -webkit-animation-delay: 0s;
+}
+
+/* ---- amcharts ---- */
+#chartdiv {
+    width: 100%;
+    height: 470px;
+    max-width: 100%;
+    tspan {
+        font-weight: 400;
+    }
 }
