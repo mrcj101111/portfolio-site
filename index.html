@@ -7,8 +7,12 @@
     <title>Document</title>
 
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css">
     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+        integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;700&display=swap" rel="stylesheet">
 
 </head>
 
@@ -19,21 +23,39 @@
             <div class="swiper-slide">
                 <div id="particles-js">
                     <div class="rectangles-block">
-                        <svg class="logo-block first">
+                        <svg data-aos="fade-down-left" data-aos-delay="200" data-aos-duration="700"
+                            class="logo-block first">
                             <rect />
                         </svg>
-                        <svg class="logo-block second">
+                        <svg data-aos="fade-down-left" data-aos-delay="400" data-aos-duration="900"
+                            class="logo-block second">
                             <rect />
                         </svg>
-                        <h1>KustomDev</h1>
-                        <svg class="logo-block third">
+                        <h1 data-aos="fade-up-right" data-aos-delay="1200" data-aos-easing="ease-in"
+                            data-aos-duration="600">
+                            KustomDev
+                            <span>.</span>
+                        </h1>
+                        <svg data-aos="fade-down-left" data-aos-delay="600" data-aos-duration="1300"
+                            class="logo-block third">
                             <rect />
                         </svg>
+                        <div class="glitch-container">
+                            <div class="glitch" data-aos="zoom-in" data-aos-delay="2000" data-aos-duration="800"
+                                data-text="Custom Software Solutions">Custom Software Solutions</div>
+                        </div>
                     </div>
+                    <svg class="arrows">
+                        <path class="a1" d="M0 0 L30 32 L60 0"></path>
+                        <path class="a2" d="M0 20 L30 52 L60 20"></path>
+                        <path class="a3" d="M0 40 L30 72 L60 40"></path>
+                    </svg>
                 </div>
-
             </div>
-            <div class="swiper-slide">Slide 2</div>
+
+            <div class="swiper-slide">
+                <h2>What We Do</h2>
+            </div>
             <div class="swiper-slide">Slide 3</div>
             <div class="swiper-slide">Slide 4</div>
         </div>
@@ -49,6 +71,8 @@
     <!-- Particles.js -->
     <script src="http://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
     <script src="http://threejs.org/examples/js/libs/stats.min.js"></script>
+    <!-- AOS -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script type="text/javascript" src="./index.js"></script>
 </body>
 

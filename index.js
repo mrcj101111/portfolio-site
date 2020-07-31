@@ -5,7 +5,6 @@ $(document).ready(() => {
         slidesPerView: 1,
         spaceBetween: 0,
         mousewheel: true,
-        allowTouchMove: false,
         pagination: {
             el: '.swiper-pagination',
             clickable: true,
@@ -83,3 +82,5 @@ $(document).ready(() => {
     });
 })
 
+// AOS
+AOS.init();
