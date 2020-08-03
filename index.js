@@ -5,7 +5,6 @@ $(document).ready(() => {
         slidesPerView: 1,
         spaceBetween: 0,
         mousewheel: true,
-        allowTouchMove: false,
         pagination: {
             el: '.swiper-pagination',
             clickable: true,
@@ -86,69 +85,8 @@ $(document).ready(() => {
 // AOS
 AOS.init();
 
-
-// amcharts
-am4core.useTheme(am4themes_dark);
-am4core.useTheme(am4themes_animated);
-
-var chart = am4core.create("chartdiv", am4plugins_forceDirected.ForceDirectedTree);
-var networkSeries = chart.series.push(new am4plugins_forceDirected.ForceDirectedSeries())
-
-chart.logo.height = -1000; //Hide amcharts logo
-
-chart.data = [
-    {
-        name: "Software \n Development",
-        children: [
-            {
-                name: "Websites", value: 3,
-            },
-            {
-                name: "Custom \n Software", value: 3
-            },
-            {
-                name: "Design", value: 2
-            },
-            {
-                name: "Hosting", value: 2
-            },
-            {
-                name: "Site \n Maintenance", value: 5
-            },
-        ]
-    }
-];
-
-networkSeries.dataFields.value = "value";
-networkSeries.dataFields.name = "name";
-networkSeries.dataFields.children = "children";
-networkSeries.nodes.template.tooltipText = "{name}";
-networkSeries.nodes.template.fillOpacity = 1;
-networkSeries.nodes.template.label.truncate = true;
-networkSeries.nodes.template.label.text = "{name}"
-networkSeries.fontSize = 10;
-
-networkSeries.links.template.strokeWidth = 1;
-
-var hoverState = networkSeries.links.template.states.create("hover");
-hoverState.properties.strokeWidth = 2;
-hoverState.properties.strokeOpacity = 1;
-
-networkSeries.nodes.template.events.on("over", function (event) {
-    event.target.dataItem.childLinks.each(function (link) {
-        link.isHover = true;
-    })
-    if (event.target.dataItem.parentLink) {
-        event.target.dataItem.parentLink.isHover = true;
-    }
-
-})
-
-networkSeries.nodes.template.events.on("out", function (event) {
-    event.target.dataItem.childLinks.each(function (link) {
-        link.isHover = false;
-    })
-    if (event.target.dataItem.parentLink) {
-        event.target.dataItem.parentLink.isHover = false;
-    }
-})
+//Logo Section
+$('.logo-section > div > div > i').hover(
+    function () { $(this).addClass('colored') },
+    function () { $(this).removeClass('colored') }
+)

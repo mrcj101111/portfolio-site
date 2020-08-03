@@ -12,7 +12,9 @@
     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
         integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/konpa/devicon@master/devicon.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.13.0/css/all.css">
 
 </head>
 
@@ -55,13 +57,50 @@
 
             <div class="swiper-slide">
                 <h2 class="about-header">What We Do</h2>
-                <p>KustomDev is all about software. Whether you need a fully animated website or you have an idea for a
+                <p class="section-paragraph">KustomDev is all about software. Whether you need a fully animated website or you have an idea for a
                     custom software project that you need help with, we are here for you. We believe in writing quality
                     code and taking no shortcuts. If you have an idea, but no idea where to start, we will advise and
                     guide you in the right direction to ensure you know exactly what will be needed to bring your ideas
                     to life.
                 </p>
-                <div id="chartdiv"></div>
+                <div class="container about-section">
+                    <div class="row">
+                        <div class="col-6 col-md-3 about-section__item">
+                            <h3>Web Development</h3>
+                            <i class="fa fa-code"></i>
+                            <p>
+                                What seperates us from your average WordPress site? The fact that you get exactly what
+                                you imagine. We create fully custom wesites with animations, graphics, graphs, or
+                                whatever you desire.
+                            </p>
+                        </div>
+                        <div class="col-6 col-md-3 about-section__item">
+                            <h3>Custom Software</h3>
+                            <i class="fa fa-sitemap"></i>
+                            <p>
+                                We create full-stack custom software projects to solve your everyday needs. Or perhaps
+                                you have the next "big thing", but don't know how to implement it - We are here for you.
+                            </p>
+                        </div>
+                        <div class="col-6 col-md-3 about-section__item">
+                            <h3>Design</h3>
+                            <i class="fa fa-palette"></i>
+                            <p>
+                                Everyone knows that a good project requires amazing designs. That is why we offer
+                                complete mockups and designs to create the best looking application and that you know
+                                exactly what you are getting
+                            </p>
+                        </div>
+                        <div class="col-6 col-md-3 about-section__item">
+                            <h3>Hosting</h3>
+                            <i class="fa fa-layer-group"></i>
+                            <p>
+                                We don't want you struggling to get your project in front of the world. That is why we
+                                offer hosting which includes maintenance to ensure enverything is running smoothly.
+                            </p>
+                        </div>
+                    </div>
+                </div>
                 <svg class="arrows">
                     <path class="a1" d="M0 0 L30 32 L60 0"></path>
                     <path class="a2" d="M0 20 L30 52 L60 20"></path>
@@ -70,6 +109,58 @@
             </div>
             <div class="swiper-slide">
                 <h2 class="tech-header">Our Tech</h2>
+                <p>
+                    We know that certain projects require different technologies depending on the
+                    requirements. However, we feel it is important for you to know where our strong points are and where
+                    most of our expertise lie. This way you know what to expect from us.
+                </p>
+                <div class="container logo-section">
+                    <div class="row my-5">
+                        <div class="col-auto m-auto">
+                            <i class="devicon-html5-plain-wordmark"></i>
+                        </div>
+                        <div class="col-auto m-auto">
+                            <i class="devicon-css3-plain-wordmark"></i>
+                        </div>
+                        <div class="col-auto m-auto">
+                            <i class="devicon-javascript-plain"></i>
+                        </div>
+                        <div class="col-auto m-auto">
+                            <i class="devicon-bootstrap-plain"></i>
+                        </div>
+                        <div class="col-auto m-auto">
+                            <i class="devicon-typescript-plain"></i>
+                        </div>
+                        <div class="col-auto m-auto">
+                            <i class="devicon-nodejs-plain"></i>
+                        </div>
+                        <!-- </div> -->
+                        <!-- <div class="row my-5"> -->
+                        <div class="col-auto m-auto">
+                            <i class="devicon-postgresql-plain"></i>
+                        </div>
+                        <div class="col-auto m-auto">
+                            <i class="devicon-mysql-plain"></i>
+                        </div>
+                        <div class="col-auto m-auto">
+                            <i class="devicon-angularjs-plain"></i>
+                        </div>
+                        <div class="col-auto m-auto">
+                            <i class="devicon-react-original"></i>
+                        </div>
+                        <div class="col-auto m-auto">
+                            <i class="devicon-jquery-plain"></i>
+                        </div>
+                        <div class="col-auto m-auto">
+                            <i class="devicon-sass-original"></i>
+                        </div>
+                    </div>
+                </div>
+                <svg class="arrows">
+                    <path class="a1" d="M0 0 L30 32 L60 0"></path>
+                    <path class="a2" d="M0 20 L30 52 L60 20"></path>
+                    <path class="a3" d="M0 40 L30 72 L60 40"></path>
+                </svg>
             </div>
             <div class="swiper-slide">Slide 4</div>
         </div>
@@ -87,12 +178,6 @@
     <script src="http://threejs.org/examples/js/libs/stats.min.js"></script>
     <!-- AOS -->
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-    <!-- amcharts -->
-    <script src="https://cdn.amcharts.com/lib/4/core.js"></script>
-    <script src="https://cdn.amcharts.com/lib/4/charts.js"></script>
-    <script src="https://cdn.amcharts.com/lib/4/plugins/forceDirected.js"></script>
-    <script src="https://cdn.amcharts.com/lib/4/themes/dark.js"></script>
-    <script src="https://cdn.amcharts.com/lib/4/themes/animated.js"></script>
     <script type="text/javascript" src="./index.js"></script>
 </body>
 
