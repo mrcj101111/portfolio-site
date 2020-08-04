@@ -11,6 +11,11 @@ $(document).ready(() => {
         },
     });
 
+    // Tooltip
+    $(function () {
+        $('[data-toggle="tooltip"]').tooltip()
+      })
+
     // Particle.js
     particlesJS("particles-js", {
         "particles": {
